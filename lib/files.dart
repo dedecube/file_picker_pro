@@ -474,6 +474,7 @@ class Files {
         uiSettings: [
           AndroidUiSettings(
               toolbarTitle: cropperToolbarTitle,
+              hideBottomControls: true,
               toolbarColor: cropperToolbarColor,
               toolbarWidgetColor: cropperToolbarWidgetsColor,
               initAspectRatio: cropOnlySquare
