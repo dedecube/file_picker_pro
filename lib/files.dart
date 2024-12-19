@@ -484,6 +484,7 @@ class Files {
               title: cropperToolbarTitle,
               doneButtonTitle: cropperDoneButtonTitle,
               cancelButtonTitle: cropperCancelButtonTitle,
+              aspectRatioPickerButtonHidden: true,
               aspectRatioLockEnabled: cropOnlySquare ? true : false)
         ]);
   }
