@@ -22,6 +22,8 @@ class FilePicker extends StatefulWidget {
   final int? maxFileSizeInMb;
   final bool cropOnlySquare;
   final String cropperToolbarTitle;
+  final String cropperDoneButtonTitle;
+  final String cropperCancelButtonTitle;
   final Color cropperToolbarColor;
   final Color cropperToolbarWidgetsColor;
   final List<String>? allowedExtensions;
@@ -48,6 +50,8 @@ class FilePicker extends StatefulWidget {
       this.maxFileSizeInMb,
       this.cropOnlySquare = false,
       this.cropperToolbarTitle = Files.cropperToolbarTitle,
+      this.cropperDoneButtonTitle = Files.cropperDoneButtonTitle,
+      this.cropperCancelButtonTitle = Files.cropperCancelButtonTitle,
       this.cropperToolbarColor = Files.cropperToolbarColor,
       this.cropperToolbarWidgetsColor = Files.cropperToolbarWidgetsColor,
       this.allowedExtensions,

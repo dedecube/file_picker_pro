@@ -63,6 +63,8 @@ class Files {
   static const String ttf = "ttf";
 
   static const String cropperToolbarTitle = "Crop";
+  static const String cropperDoneButtonTitle = "Done";
+  static const String cropperCancelButtonTitle = "Cancel";
   static const Color cropperToolbarColor = Colors.black;
   static const Color cropperToolbarWidgetsColor = Colors.white;
   static const String _filePickCancel = "File picker cancel";
@@ -224,6 +226,8 @@ class Files {
       int? maxFileSizeInMB,
       bool cropOnlySquare = false,
       String cropperToolbarTitle = Files.cropperToolbarTitle,
+      String cropperDoneButtonTitle = Files.cropperDoneButtonTitle,
+      String cropperCancelButtonTitle = Files.cropperCancelButtonTitle,
       Color cropperToolbarColor = Files.cropperToolbarColor,
       Color cropperToolbarWidgetsColor = Files.cropperToolbarWidgetsColor,
       List<String>? allowedExtensions}) async {
@@ -234,6 +238,8 @@ class Files {
             maxFileSizeInMb: maxFileSizeInMB,
             cropOnlySquare: cropOnlySquare,
             cropperToolbarTitle: cropperToolbarTitle,
+            cropperDoneButtonTitle: cropperDoneButtonTitle,
+            cropperCancelButtonTitle: cropperCancelButtonTitle,
             cropperToolbarColor: cropperToolbarColor,
             cropperToolbarWidgetsColor: cropperToolbarWidgetsColor,
             onSelected: (fileData) {
@@ -251,6 +257,8 @@ class Files {
                 maxFileSizeInMb: maxFileSizeInMB,
                 cropOnlySquare: cropOnlySquare,
                 cropperToolbarTitle: cropperToolbarTitle,
+                cropperDoneButtonTitle: cropperDoneButtonTitle,
+                cropperCancelButtonTitle: cropperCancelButtonTitle,
                 cropperToolbarColor: cropperToolbarColor,
                 cropperToolbarWidgetsColor: cropperToolbarWidgetsColor,
                 onSelected: (fileData) {
@@ -284,6 +292,8 @@ class Files {
       int? maxFileSizeInMb,
       bool cropOnlySquare = false,
       String cropperToolbarTitle = Files.cropperToolbarTitle,
+      String cropperDoneButtonTitle = Files.cropperDoneButtonTitle,
+      String cropperCancelButtonTitle = Files.cropperCancelButtonTitle,
       Color cropperToolbarColor = Files.cropperToolbarColor,
       Color cropperToolbarWidgetsColor =
           Files.cropperToolbarWidgetsColor}) async {
@@ -347,6 +357,8 @@ class Files {
       int? maxFileSizeInMb,
       bool cropOnlySquare = false,
       String cropperToolbarTitle = Files.cropperToolbarTitle,
+      String cropperDoneButtonTitle = Files.cropperDoneButtonTitle,
+      String cropperCancelButtonTitle = Files.cropperCancelButtonTitle,
       Color cropperToolbarColor = Files.cropperToolbarColor,
       Color cropperToolbarWidgetsColor =
           Files.cropperToolbarWidgetsColor}) async {
@@ -358,6 +370,8 @@ class Files {
             filePath: image.path,
             cropOnlySquare: cropOnlySquare,
             cropperToolbarTitle: cropperToolbarTitle,
+            cropperDoneButtonTitle: cropperDoneButtonTitle,
+            cropperCancelButtonTitle: cropperCancelButtonTitle,
             cropperToolbarColor: cropperToolbarColor,
             cropperToolbarWidgetsColor: cropperToolbarWidgetsColor);
         if (croppedImage != null) {
@@ -447,6 +461,8 @@ class Files {
       {required String filePath,
       bool cropOnlySquare = false,
       String cropperToolbarTitle = Files.cropperToolbarTitle,
+      String cropperDoneButtonTitle = Files.cropperDoneButtonTitle,
+      String cropperCancelButtonTitle = Files.cropperCancelButtonTitle,
       Color cropperToolbarColor = Files.cropperToolbarColor,
       Color cropperToolbarWidgetsColor =
           Files.cropperToolbarWidgetsColor}) async {
@@ -466,6 +482,8 @@ class Files {
               lockAspectRatio: cropOnlySquare ? true : false),
           IOSUiSettings(
               title: cropperToolbarTitle,
+              doneButtonTitle: cropperDoneButtonTitle,
+              cancelButtonTitle: cropperCancelButtonTitle,
               aspectRatioLockEnabled: cropOnlySquare ? true : false)
         ]);
   }
