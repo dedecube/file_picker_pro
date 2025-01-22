@@ -305,6 +305,8 @@ class Files {
             filePath: image.path,
             cropOnlySquare: cropOnlySquare,
             cropperToolbarTitle: cropperToolbarTitle,
+            cropperDoneButtonTitle: cropperDoneButtonTitle,
+            cropperCancelButtonTitle: cropperCancelButtonTitle,
             cropperToolbarColor: cropperToolbarColor,
             cropperToolbarWidgetsColor: cropperToolbarWidgetsColor);
         if (croppedImage != null) {
